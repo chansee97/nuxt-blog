@@ -1,0 +1,42 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint . --fix"
+  },
+  "dependencies": {
+    "@iconify-json/icon-park-outline": "^1.1.10",
+    "@unocss/reset": "^0.51.5",
+    "consola": "^3.1.0"
+  },
+  "devDependencies": {
+    "@chansee97/eslint-config-vue": "^0.1.0",
+    "@nuxt/content": "^2.5.2",
+    "@types/node": "^18",
+    "@unocss/nuxt": "^0.51.5",
+    "@vueuse/core": "^10.0.2",
+    "@vueuse/nuxt": "^10.0.2",
+    "eslint": "^8.38.0",
+    "lint-staged": "^13.2.1",
+    "nuxt": "^3.4.1",
+    "simple-git-hooks": "^2.8.1",
+    "unocss-preset-chinese": "^0.0.6",
+    "unocss-preset-theme": "^0.6.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*.vue": [
+      "eslint --fix"
+    ]
+  }
+}
