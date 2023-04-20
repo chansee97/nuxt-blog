@@ -10,10 +10,10 @@ export const navLinks = [{
   title: 'Home',
   path: '/',
 },
-// {
-//   title: 'Blog',
-//   path: '/posts',
-// },
+{
+  title: 'Blog',
+  path: '/blog',
+},
 // {
 //   title: 'Tags',
 //   path: '/tags',
