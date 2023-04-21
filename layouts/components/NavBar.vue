@@ -19,7 +19,3 @@ const toogleTheme = useToggle(isDark)
     </a>
   </nav>
 </template>
-
-<style>
-
-</style>

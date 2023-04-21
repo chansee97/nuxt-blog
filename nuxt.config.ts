@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@vueuse/nuxt',
     '@nuxt/content',
+    '@nuxtjs/stylelint-module',
   ],
   app: {
     head: {
@@ -30,15 +31,28 @@ export default defineNuxtConfig({
   },
   content: {
     // My custom configuration
+    markdown: {
+      anchorLinks: false,
+    },
     highlight: {
       theme: {
         // Default theme (same as single string)
-        default: 'github-light',
+        default: 'vitesse-light',
         // Theme used if `html.dark`
-        dark: 'github-dark',
+        dark: 'vitesse-dark',
         // Theme used if `html.sepia`
         sepia: 'monokai',
       },
+      preload: [
+        'c',
+        'cpp',
+        'java',
+      ],
+
     },
+  },
+  stylelint: {
+    /* module options */
+    lintOnStart: false,
   },
 })

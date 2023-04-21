@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import '@unocss/reset/tailwind.css'
+import '@/assets/styles/markdown.scss'
 </script>
 
 <template>
@@ -13,9 +14,10 @@ import '@unocss/reset/tailwind.css'
 .page-leave-active {
   transition: all 0.4s;
 }
+
 .page-enter-from,
 .page-leave-to {
-  opacity: 0;
   filter: blur(1rem);
+  opacity: 0;
 }
 </style>

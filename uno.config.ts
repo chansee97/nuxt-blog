@@ -6,7 +6,7 @@ export default defineConfig({
   shortcuts: {
     'text-primary': 'c-blue-400 dark:c-gray-200',
     'hover': 'op-50 hover:op-100',
-    'container': 'bg-white dark:bg-#1f1f1f',
+    'container': 'bg-container dark:bg-#1f1f1f',
     'color-fade': 'c-gray-900:50 dark:c-gray-300:50',
   },
   theme: {
@@ -14,7 +14,7 @@ export default defineConfig({
       'primary': '#1677ff',
       'primary-border': '#1677ff',
       'text': 'rgba(0, 0, 0, 0.88)',
-      'container': '#ffffff',
+      'container': 'f8f9fa',
       'border': '#d9d9d9',
     },
   },

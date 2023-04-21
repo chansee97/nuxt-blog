@@ -23,7 +23,3 @@
     </ContentList>
   </main>
 </template>
-
-<style scoped>
-
-</style>

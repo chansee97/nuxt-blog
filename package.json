@@ -7,24 +7,29 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "stylelint:fix": "npx stylelint **/*.{css,scss,vue,less,html} --fix"
   },
   "dependencies": {
     "@iconify-json/icon-park-outline": "^1.1.10",
-    "@unocss/reset": "^0.51.5",
-    "consola": "^3.1.0"
+    "@unocss/reset": "^0.51.5"
   },
   "devDependencies": {
     "@chansee97/eslint-config-vue": "^0.1.0",
-    "@nuxt/content": "^2.5.2",
-    "@types/node": "^18",
+    "@chansee97/stylelint-config": "^0.1.0",
+    "@nuxt/content": "^2.6.0",
+    "@nuxtjs/stylelint-module": "^5.0.1",
+    "@types/node": "^18.15.12",
     "@unocss/nuxt": "^0.51.5",
     "@vueuse/core": "^10.0.2",
     "@vueuse/nuxt": "^10.0.2",
+    "consola": "^3.1.0",
     "eslint": "^8.38.0",
     "lint-staged": "^13.2.1",
-    "nuxt": "^3.4.1",
+    "nuxt": "^3.4.2",
+    "sass": "^1.62.0",
     "simple-git-hooks": "^2.8.1",
+    "stylelint": "^15.5.0",
     "unocss-preset-chinese": "^0.0.6",
     "unocss-preset-theme": "^0.6.0"
   },
@@ -35,8 +40,12 @@
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix"
     ],
+    "*.{css,scss,less,html}": [
+      "stylelint --fix"
+    ],
     "*.vue": [
-      "eslint --fix"
+      "eslint --fix",
+      "stylelint --fix"
     ]
   }
 }
