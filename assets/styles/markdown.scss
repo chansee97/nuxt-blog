@@ -46,13 +46,12 @@
   }
 
   /* list */
-  ul,
+  ul:not(.contains-task-list),
   ol {
-    padding-left: 1em;
-    margin: 0 0 1.5em 1.5em;
+    padding-left: 2em;
   }
 
-  ul {
+  ul:not(.contains-task-list) {
     list-style: disc;
   }
 
@@ -112,8 +111,33 @@
 
   /* hr */
   hr {
-    margin: 2.5em 0;
+    margin: 2em 0;
     border-color: var(--strong-color);
     border-top-style: dashed;
+  }
+
+  /* img */
+  p > img {
+    margin: 1em auto;
+    border-radius: 0.5em;
+  }
+
+  /* Table */
+  table {
+    width: 100%;
+
+    th,
+    tr {
+      text-align: center;
+    }
+
+    thead {
+      background-color: #628e81;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    tr:nth-child(even) {
+      background-color: var(--inline-code-bg);
+    }
   }
 }

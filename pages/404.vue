@@ -3,5 +3,5 @@
 </script>
 
 <template>
-  <div>404</div>
+  <div>404了！</div>
 </template>

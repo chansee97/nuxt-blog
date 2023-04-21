@@ -39,7 +39,7 @@ function helloWorld() {
 
 或者使用反引号 \` 包括起来单行展示代码 `console.log('Hello World!')` 。
 
-分?割?线?
+分割线
 
 ---
 
@@ -60,3 +60,9 @@ function helloWorld() {
 引用：
 
 > 这是一个引用。
+
+选择框
+- [ ] sasas
+- [ ] sasas2
+- [ ] sasas23
+- [x] sasas23
