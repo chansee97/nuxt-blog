@@ -1,18 +1,20 @@
 <script lang="ts" setup>
 import NavBar from './components/NavBar.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <div class="container min-h-screen h-full text-primary">
-    <div class="w-660px m-auto">
-      <header class="flex justify-between items-center py-2em text-18px">
-        <span class="color-fade">Chansee97</span>
-        <NavBar />
-      </header>
-      <main>
+  <div class="container min-h-screen flex flex-col h-full text-primary">
+    <header class="flex justify-between items-center p-2em m-auto w-full">
+      <span>Chansee97</span>
+      <NavBar />
+    </header>
+    <main class="flex-1 px-7 py-10 w-100%">
+      <div class="max-w-65ch m-auto">
         <slot />
-      </main>
-    </div>
+      </div>
+    </main>
+    <Footer class=" m-auto" />
   </div>
 </template>
 

@@ -1,6 +1,8 @@
 .prose {
-  /* common */
-  --strong-color: #1a3b32;
+  /* var */
+  --common-transition: all 0.3s ease;
+  --common-rd: 0.5em;
+  --common-bg: #69a79429;
 
   /* headings */
   h1,
@@ -10,11 +12,27 @@
   h5,
   h6 {
     position: relative;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
     font-weight: bold;
     line-height: 1.4;
     cursor: text;
+  }
+
+  h2,
+  h3,
+  h4 {
+    &::before {
+      position: absolute;
+      margin-left: -1em;
+      content: '#';
+      opacity: 0;
+      transition: var(--common-transition);
+    }
+
+    &:hover::before {
+      opacity: 0.7;
+    }
   }
 
   h1 {
@@ -42,7 +60,6 @@
 
   h6 {
     font-size: 1em;
-    color: #777;
   }
 
   /* list */
@@ -51,93 +68,147 @@
     padding-left: 2em;
   }
 
-  ul:not(.contains-task-list) {
-    list-style: disc;
-  }
-
   ol {
     list-style-type: decimal;
   }
 
-  /* anchor */
-  --underline-color: #314a43;
+  ul:not(.contains-task-list) {
+    list-style: disc;
 
-  a {
-    color: var(--strong-color);
-    text-decoration: underline dotted var(--underline-color);
+    li::marker {
+      color: #d1d5db;
+    }
+  }
+
+  /* p */
+  p {
+    margin: 1.2em 0;
+  }
+
+  /* anchor */
+  :not(h1, h2, h3, h4, h5, h6, sup) > a {
+    text-decoration: underline #c9c7c2;
+    text-decoration-thickness: 1px;
     text-underline-offset: 0.3em;
+    transition: var(--common-transition);
 
     &:hover {
-      text-decoration-color: var(--strong-color);
+      text-decoration-color: currentcolor;
     }
   }
 
   /* code */
-  --pre-bg: #69a79429;
-  --code-rd: 0.25em;
-  --inline-code-bg: #80e7b94b;
+  .code-wrap {
+    position: relative;
 
-  pre {
-    padding: 0.5em 0.7em;
-    background-color: var(--pre-bg);
-    border-radius: var(--code-rd);
+    .code-tools {
+      position: absolute;
+      top: 1.2em;
+      right: 1em;
+      opacity: 0;
+      transition: var(--common-transition);
+      transform: scale(0.8);
+    }
 
-    > code .line {
-      display: block;
-      min-height: 1rem;
+    &:hover .code-tools {
+      opacity: 1;
+      transform: scale(1);
     }
   }
 
-  code {
-    color: var(--strong-color);
-    background-color: var(--inline-code-bg);
-    border-radius: var(--code-rd);
+  pre {
+    padding: 1.2em 1em;
+    margin: 0.5em 0;
+    overflow-x: auto;
+    background-color: var(--common-bg);
+    border-radius: var(--common-rd);
+
+    .line {
+      display: block;
+      min-height: 1em;
+    }
+  }
+
+  :not(pre) > code {
+    font-weight: bold;
+    border-radius: var(--common-rd);
+
+    &::before,
+    &::after {
+      content: '`';
+    }
   }
 
   /* blockquote */
   blockquote {
     padding-left: 1.2em;
     font-style: italic;
-    color: var(--strong-color);
-
-    & > p::before {
-      content: open-quote;
-    }
-
-    & > p::after {
-      content: close-quote;
-    }
+    border-color: var(--common-bg);
+    border-left-width: 0.25em;
   }
 
   /* hr */
   hr {
-    margin: 2em 0;
-    border-color: var(--strong-color);
-    border-top-style: dashed;
+    width: 200px;
+    margin: 2.5em auto;
+    border-color: currentcolor;
+    opacity: 0.5;
   }
 
   /* img */
-  p > img {
-    margin: 1em auto;
-    border-radius: 0.5em;
+  figure {
+    margin: 4em auto 3em;
+
+    img {
+      width: 100%;
+      border-radius: var(--common-rd);
+    }
+
+    figcaption {
+      padding-top: 1em;
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
   }
 
   /* Table */
   table {
     width: 100%;
 
-    th,
-    tr {
+    th {
       text-align: center;
     }
 
+    th,
+    td {
+      padding: 0.3em 0.8em;
+    }
+
     thead {
-      background-color: #628e81;
-      border-bottom: 1px dashed #ccc;
+      background-color: var(--common-bg);
     }
 
     tr:nth-child(even) {
-      background-color: var(--inline-code-bg);
+      background-color: var(--common-bg);
+    }
+  }
+
+  /* other */
+  sup {
+    padding: 0 0.3em;
+
+    &::before {
+      content: '[';
+    }
+
+    &::after {
+      content: ']';
+    }
+  }
+
+  .contains-task-list {
+    input[type='checkbox'] {
+      margin: 0 0.5em;
     }
   }
 }

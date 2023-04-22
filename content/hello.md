@@ -5,8 +5,6 @@ description: "Hello world!!! This is an example blog post showcasing some of the
 tags: ["example", "blog", "cool"]
 ---
 
-import { Image } from "@astrojs/image/components";
-
 ## Hello World
 
 Following is an example blog post written in an mdx file. You can find me @ src/content/post/hello-world.mdx. Here you can add/update/delete details and watch the changes live when running in develop mode.

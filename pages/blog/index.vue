@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <main>
-    <ContentList path="/">
+  <div>
+    <ContentList>
       <template #default="{ list }">
         <div v-for="article in list" :key="article._path">
           <h2 :title="article.title">
@@ -21,5 +21,5 @@
         <p>No articles found.</p>
       </template>
     </ContentList>
-  </main>
+  </div>
 </template>

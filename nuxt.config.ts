@@ -32,7 +32,7 @@ export default defineNuxtConfig({
   content: {
     // My custom configuration
     markdown: {
-      anchorLinks: false,
+      // anchorLinks: false,
     },
     highlight: {
       theme: {
