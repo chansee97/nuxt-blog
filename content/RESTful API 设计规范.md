@@ -2,7 +2,9 @@
 date: 2023-03-13 星期一
 url: 
 aliases: 
-tags: restful 规范
+tags:
+  - restful
+  - 规范
 title: RESTful API 设计规范
 edited date: 2023-03-13 星期一
 ---

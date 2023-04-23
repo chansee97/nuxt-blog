@@ -1,6 +1,6 @@
 ---
 title: "fist!"
-publishDate: "2023-04-20"
+date: "2023-04-20"
 description: "不喜欢诗和远方"
 tags:
   - example
