@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@iconify-json/icon-park-outline": "^1.1.10",
-    "@unocss/reset": "^0.51.5"
+    "@unocss/reset": "^0.51.5",
+    "date-fns": "^2.29.3"
   },
   "devDependencies": {
     "@chansee97/eslint-config-vue": "^0.1.0",

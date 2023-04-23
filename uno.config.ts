@@ -5,7 +5,7 @@ export default defineConfig({
   // ...UnoCSS options
   shortcuts: {
     'text-primary': 'c-primary dark:c-primary-dark',
-    'hover': 'op-50 hover:op-100 cursor-pointer',
+    'hover': 'op-70 hover:op-100 cursor-pointer transition-opacity',
     'container': 'bg-container dark:bg-container-dark',
     'bd': 'border-gray-500 border-1',
   },

@@ -18,7 +18,7 @@ import '@/assets/styles/global.css'
 
 .page-enter-from,
 .page-leave-to {
-  filter: blur(1rem);
   opacity: 0;
+  transform:translateX(1em);
 }
 </style>

@@ -1,6 +1,6 @@
 ---
-title: "Testing testing 123!"
-date: "13 May 2022"
+title: Testing testing 123!
+date: 2022-04-16
 description: "Hello world!!! This is an example blog post showcasing some of the cool stuff Astro Cactus theme can do."
 tags: ["example", "blog", "cool"]
 ---
