@@ -160,7 +160,8 @@
     margin: 4em auto 3em;
 
     img {
-      width: 100%;
+      max-width: 100%;
+      margin: auto;
       border-radius: var(--common-rd);
     }
 
