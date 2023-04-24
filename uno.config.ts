@@ -1,5 +1,4 @@
-import { defineConfig, presetAttributify, presetIcons, presetUno } from 'unocss'
-import presetChinese from 'unocss-preset-chinese'
+import { defineConfig, presetAttributify, presetIcons, presetUno, presetWebFonts, transformerVariantGroup } from 'unocss'
 
 export default defineConfig({
   // ...UnoCSS options
@@ -17,7 +16,13 @@ export default defineConfig({
     presetUno({
       dark: 'class',
     }),
-    presetChinese(),
+    presetWebFonts({
+      provider: 'google',
+      fonts: {
+        sans: ['Montserrat'],
+        mono: ['Source Code Pro:400,700'],
+      },
+    }),
     presetAttributify (),
     presetIcons({
       collections: {
@@ -25,14 +30,7 @@ export default defineConfig({
       },
     }),
   ],
-  preflights: [
-    {
-      getCSS: () => `
-      ::selection {
-        background-color: #10B981;
-        color:white;
-      }
-    `,
-    },
+  transformers: [
+    transformerVariantGroup(),
   ],
 })

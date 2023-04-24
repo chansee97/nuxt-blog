@@ -4,8 +4,8 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <div class="bg-container min-h-screen flex flex-col h-full c-primary">
-    <header class="flex justify-between items-center p-2em m-auto w-full">
+  <div class="bg-container min-h-screen flex flex-col h-full c-primary font-sans font-mono">
+    <header class="flex justify-between items-center p-2em w-full text-lg">
       <span>Chansee97</span>
       <NavBar />
     </header>

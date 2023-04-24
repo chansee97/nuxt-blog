@@ -8,13 +8,13 @@
 html {
   --primary: #0d0d0d;
   --c-bg: #fafafa;
-  --c-scrollbar: #eee;
-  --c-scrollbar-hover: #bbb;
+  --c-scrollbar: #ccc;
+  --c-scrollbar-hover: #aaa;
 }
 
 html.dark {
   --primary: #ebebeb;
   --c-bg: #141414;
-  --c-scrollbar: #222;
-  --c-scrollbar-hover: #222;
+  --c-scrollbar: #555;
+  --c-scrollbar-hover: #777;
 }

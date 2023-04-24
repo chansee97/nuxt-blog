@@ -13,9 +13,7 @@ const toogleTheme = useToggle(isDark)
     <NuxtLink v-for="link in navLinks" :key="link.path" :title="link.title" :to="link.path" class="hover">
       {{ link.title }}
     </NuxtLink>
-    <a class="i-i hover" href="https://github.com/chansee97" target="_blank" />
-    <a class="hover" @click="toogleTheme()">
-      <div class="dark:i-icon-park-outline-moon i-icon-park-outline-sun" />
-    </a>
+    <a title="GitHub" class="i-icon-park-outline-github hover" href="https://github.com/chansee97" target="_blank" />
+    <a title="Toggle Color Scheme" class="dark:i-icon-park-outline-moon i-icon-park-outline-sun hover" @click="toogleTheme()" />
   </nav>
 </template>

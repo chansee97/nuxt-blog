@@ -21,8 +21,19 @@
   background: var(--c-scrollbar-hover);
 }
 
+::selection {
+  color: white;
+  background-color: #26b988b6;
+}
+
 html,
 body {
   height: 100%;
   scroll-behavior: smooth;
+  line-height: 1.75;
+}
+
+
+pre,code{
+  font-family: "Source Code Pro", ui-monospace, monospace;
 }

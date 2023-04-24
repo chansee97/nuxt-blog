@@ -30,9 +30,7 @@
     "nuxt": "^3.4.2",
     "sass": "^1.62.0",
     "simple-git-hooks": "^2.8.1",
-    "stylelint": "^15.6.0",
-    "unocss-preset-chinese": "^0.0.6",
-    "unocss-preset-theme": "^0.6.0"
+    "stylelint": "^15.6.0"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
