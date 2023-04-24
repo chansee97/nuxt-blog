@@ -27,12 +27,14 @@
 }
 
 html,
-body {
+body,#nuxt-root {
   height: 100%;
+}
+
+html{
   scroll-behavior: smooth;
   line-height: 1.75;
 }
-
 
 pre,code{
   font-family: "Source Code Pro", ui-monospace, monospace;

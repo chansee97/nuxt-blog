@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxtjs/stylelint-module',
   ],
   app: {
+    rootId: 'nuxt-root',
     head: {
       meta: [
         { name: 'description', content: siteConfig.description },

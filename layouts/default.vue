@@ -5,8 +5,8 @@ import Avatar from './components/Avatar.vue'
 </script>
 
 <template>
-  <div class="bg-container min-h-screen flex flex-col h-full c-primary font-sans font-mono">
-    <header class="flex justify-end items-center p-2em w-full text-lg">
+  <div class="bg-container c-primary font-sans flex flex-col h-full">
+    <header class="flex justify-end items-center p-2em text-lg">
       <Avatar />
       <NavBar />
     </header>
