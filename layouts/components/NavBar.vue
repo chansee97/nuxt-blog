@@ -9,7 +9,7 @@ const toogleTheme = useToggle(isDark)
 </script>
 
 <template>
-  <nav class="flex items-center gap-1em">
+  <nav class="flex items-center gap-1.5em">
     <template v-for="link in navLinks" :key="link.path">
       <NuxtLink v-if="link.path.startsWith('/')" :title="link.title" :to="link.path" class="hover">
         <span class="hidden md:inline">{{ link.title }}</span>

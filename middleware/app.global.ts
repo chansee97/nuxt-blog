@@ -4,7 +4,8 @@ export default defineNuxtRouteMiddleware((to, _from) => {
   useHead({
     title: to.path,
     titleTemplate: (titleChunk) => {
-      return titleChunk ? `${titleChunk} - ${siteConfig.title}` : `${siteConfig.title} - site`
+      const title = titleChunk?.replace(/^\/+/, '') || siteConfig.title
+      return title
     },
     meta: [
       {

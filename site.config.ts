@@ -1,9 +1,8 @@
 export const siteConfig = {
-  author: 'chansee97',
-  title: 'chansee97',
+  author: 'Chansee97',
+  title: 'Chansee97-Blog',
   description: 'My amazing site.',
   lang: 'en-GB',
-  github: 'https://github.com/chansee97',
 }
 
 export const navLinks = [{
