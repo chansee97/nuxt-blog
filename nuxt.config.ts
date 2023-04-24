@@ -27,7 +27,7 @@ export default defineNuxtConfig({
         lang: siteConfig.lang,
       },
       bodyAttrs: {
-        class: 'font-sans c-primary',
+        class: 'font-sans',
       },
     },
   },

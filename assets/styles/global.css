@@ -32,9 +32,10 @@ body,#nuxt-root {
 }
 
 html{
-  scroll-behavior: smooth;
   line-height: 1.75;
+  color: var(--primary);
   background-color: var(--c-bg);
+  scroll-behavior: smooth;
 }
 
 pre,code{
