@@ -5,6 +5,8 @@
 node_modules
 # System files
 *.log
+# lock file
+pnpm-lock.yaml
 
 .nitro
 .cache
