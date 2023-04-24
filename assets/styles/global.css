@@ -34,6 +34,7 @@ body,#nuxt-root {
 html{
   scroll-behavior: smooth;
   line-height: 1.75;
+  background-color: var(--c-bg);
 }
 
 pre,code{

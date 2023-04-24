@@ -14,7 +14,7 @@ export default defineNuxtConfig({
       meta: [
         { name: 'description', content: siteConfig.description },
         { name: 'author', content: siteConfig.author },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1.0, shrink-to-fit=no' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
         { name: 'revisit-after', content: '7 days' },
         { name: 'msapplication-TileColor', content: '#ffffff' },
         { charset: 'UTF-8' },
@@ -25,6 +25,9 @@ export default defineNuxtConfig({
       ],
       htmlAttrs: {
         lang: siteConfig.lang,
+      },
+      bodyAttrs: {
+        class: 'font-sans c-primary',
       },
     },
   },
@@ -50,6 +53,12 @@ export default defineNuxtConfig({
 
     },
   },
+  css: [
+    '@unocss/reset/tailwind.css',
+    '@/assets/styles/global.css',
+    '@/assets/styles/theme.css',
+    '@/assets/styles/markdown.scss',
+  ],
   stylelint: {
     /* module options */
     lintOnStart: false,
