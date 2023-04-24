@@ -1,4 +1,7 @@
 import { defineConfig, presetAttributify, presetIcons, presetUno, presetWebFonts, transformerVariantGroup } from 'unocss'
+import { navLinks } from './site.config'
+
+const safeNavIcon = navLinks.map(link => link.icon)
 
 export default defineConfig({
   // ...UnoCSS options
@@ -30,6 +33,7 @@ export default defineConfig({
       },
     }),
   ],
+  safelist: [...safeNavIcon],
   transformers: [
     transformerVariantGroup(),
   ],

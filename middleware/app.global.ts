@@ -1,4 +1,4 @@
-import siteConfig from '@/site.config'
+import { siteConfig } from '@/site.config'
 
 export default defineNuxtRouteMiddleware((to, _from) => {
   useHead({

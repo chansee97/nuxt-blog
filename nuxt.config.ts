@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import siteConfig from './site.config'
+import { siteConfig } from './site.config'
 
 export default defineNuxtConfig({
   modules: [
