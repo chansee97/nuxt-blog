@@ -4,7 +4,7 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <div class="container min-h-screen flex flex-col h-full text-primary">
+  <div class="bg-container min-h-screen flex flex-col h-full c-primary">
     <header class="flex justify-between items-center p-2em m-auto w-full">
       <span>Chansee97</span>
       <NavBar />
@@ -17,9 +17,3 @@ import Footer from './components/Footer.vue'
     <Footer class=" m-auto" />
   </div>
 </template>
-
-<style>
-body{
-  height: 100%;
-}
-</style>

@@ -26,8 +26,6 @@ export default defineNuxtConfig({
         lang: siteConfig.lang,
       },
     },
-    pageTransition: { name: 'page', mode: 'out-in' },
-    layoutTransition: { name: 'layout', mode: 'out-in' },
   },
   content: {
     // My custom configuration

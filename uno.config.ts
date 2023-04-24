@@ -4,21 +4,13 @@ import presetChinese from 'unocss-preset-chinese'
 export default defineConfig({
   // ...UnoCSS options
   shortcuts: {
-    'text-primary': 'c-primary dark:c-primary-dark',
-    'hover': 'op-70 hover:op-100 cursor-pointer transition-opacity',
-    'container': 'bg-container dark:bg-container-dark',
-    'bd': 'border-gray-500 border-1',
+    hover: 'op-70 hover:op-100 cursor-pointer transition-opacity',
+    bd: 'border-gray-500 border-1',
   },
   theme: {
     colors: {
-      primary: {
-        DEFAULT: '#343a40',
-        dark: '#dee2e6',
-      },
-      container: {
-        DEFAULT: '#f8f9fa',
-        dark: '#212529',
-      },
+      primary: 'var(--primary)',
+      container: 'var(--c-bg)',
     },
   },
   presets: [

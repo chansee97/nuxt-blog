@@ -1,0 +1,20 @@
+:root {
+  /* common var */
+  --common-transition: all 0.3s ease;
+  --common-rd: 0.5em;
+  --common-bg: #69a79429;
+}
+
+html {
+  --primary: #0d0d0d;
+  --c-bg: #fafafa;
+  --c-scrollbar: #eee;
+  --c-scrollbar-hover: #bbb;
+}
+
+html.dark {
+  --primary: #ebebeb;
+  --c-bg: #141414;
+  --c-scrollbar: #222;
+  --c-scrollbar-hover: #222;
+}

@@ -6,15 +6,9 @@ const props = defineProps(['article'])
 function formattedDate(date: string) {
   if (!date) return ''
   const dateObject = parseISO(date)
-  const formattedResult = format(dateObject, 'MMM dd , yyyy')
+  const formattedResult = format(dateObject, 'MMM dd, yyyy')
   return formattedResult
 }
-
-// function getReadTime(content: string) {
-//   const charsPerMinute = 450 // 每分钟阅读字符数
-//   const charCount = content.length // 统计字符数
-//   return Math.round(charCount / charsPerMinute) // 计算阅读时间，四舍五入
-// }
 
 const { fullPath } = useRoute()
 </script>
