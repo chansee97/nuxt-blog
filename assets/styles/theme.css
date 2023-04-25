@@ -3,6 +3,7 @@
   --common-transition: all 0.3s ease;
   --common-rd: 0.5em;
   --common-bg: #69a79429;
+  --common-bd:#c9c7c2;
 }
 
 html {
@@ -10,6 +11,7 @@ html {
   --c-bg: #fafafa;
   --c-scrollbar: #ccc;
   --c-scrollbar-hover: #aaa;
+  --input-bg:#fff;
 }
 
 html.dark {
@@ -17,4 +19,5 @@ html.dark {
   --c-bg: #141414;
   --c-scrollbar: #555;
   --c-scrollbar-hover: #777;
+   --input-bg:#222;
 }

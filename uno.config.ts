@@ -22,7 +22,7 @@ export default defineConfig({
     presetWebFonts({
       provider: 'google',
       fonts: {
-        sans: ['Montserrat'],
+        sans: ['Poppins', 'Noto Sans Simplified Chinese'],
         mono: ['Source Code Pro:400,700'],
       },
     }),

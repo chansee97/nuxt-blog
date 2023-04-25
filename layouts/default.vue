@@ -9,7 +9,7 @@ import Avatar from './components/Avatar.vue'
     <Avatar />
     <NavBar />
   </header>
-  <main class="flex-1 px-7 py-10 w-100% prose">
+  <main class="flex-1 px-7 py-10 w-100%">
     <div class="max-w-65ch m-auto">
       <slot />
     </div>

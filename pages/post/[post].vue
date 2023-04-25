@@ -4,7 +4,7 @@ const post = route.params.post as string
 </script>
 
 <template>
-  <section class="relative">
+  <section class="prose">
     <ContentDoc :path="post">
       <template #default="{ doc }">
         <doc-toc :toc="doc.body.toc" />

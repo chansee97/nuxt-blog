@@ -2,7 +2,8 @@
 date: 2023-02-06 09:46:36
 url: 
 aliases: 
-tags: 
+tags:
+  - tech
 title: 技术文档的写作规范
 edited date: 2023-03-13 星期一
 ---

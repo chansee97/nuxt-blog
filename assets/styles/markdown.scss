@@ -58,6 +58,11 @@
   }
 
   /* list */
+  ul,
+  ol {
+    padding-left: 2em;
+  }
+
   ul {
     list-style: disc;
 
@@ -66,26 +71,17 @@
     }
   }
 
-  ul,
-  ol {
-    padding-left: 2em;
-  }
-
   ol {
     list-style-type: decimal;
   }
 
   .contains-task-list {
     padding-left: 0;
+    list-style-type: none;
 
     input[type='checkbox'] {
       margin: 0 0.5em;
     }
-  }
-
-  .contains-task-list,
-  nav ul {
-    list-style-type: none;
   }
 
   /* p */
@@ -95,7 +91,7 @@
 
   /* anchor */
   :not(h1, h2, h3, h4, h5, h6, ul, sup) > a {
-    text-decoration: underline #c9c7c2;
+    text-decoration: underline var(--common-bd);
     text-decoration-thickness: 1px;
     text-underline-offset: 0.3em;
     transition: var(--common-transition);
@@ -149,10 +145,16 @@
 
   /* blockquote */
   blockquote {
-    padding-left: 1.2em;
+    padding: 5px 1em;
     font-style: italic;
+    background-color: var(--common-bg);
     border-color: var(--common-bg);
-    border-left-width: 0.25em;
+    border-left-width: 0.4em;
+    border-radius: var(--common-rd);
+
+    > p {
+      margin:0.5em 0 ;
+    }
   }
 
   /* hr */
