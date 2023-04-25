@@ -58,7 +58,15 @@
   }
 
   /* list */
-  ul:not(.contains-task-list),
+  ul {
+    list-style: disc;
+
+    li::marker {
+      color: #d1d5db;
+    }
+  }
+
+  ul,
   ol {
     padding-left: 2em;
   }
@@ -67,12 +75,17 @@
     list-style-type: decimal;
   }
 
-  ul:not(.contains-task-list) {
-    list-style: disc;
+  .contains-task-list {
+    padding-left: 0;
 
-    li::marker {
-      color: #d1d5db;
+    input[type='checkbox'] {
+      margin: 0 0.5em;
     }
+  }
+
+  .contains-task-list,
+  nav ul {
+    list-style-type: none;
   }
 
   /* p */
@@ -81,7 +94,7 @@
   }
 
   /* anchor */
-  :not(h1, h2, h3, h4, h5, h6, ul,sup) > a {
+  :not(h1, h2, h3, h4, h5, h6, ul, sup) > a {
     text-decoration: underline #c9c7c2;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.3em;
@@ -106,7 +119,7 @@
     }
 
     &:hover .code-tools {
-      opacity: .8;
+      opacity: 0.8;
       transform: scale(1);
     }
   }
@@ -147,7 +160,7 @@
     width: 200px;
     margin: 2.5em auto;
     border-color: currentcolor;
-    border-style:dashed;
+    border-style: dashed;
     opacity: 0.2;
   }
 
@@ -202,11 +215,4 @@
       content: ']';
     }
   }
-
-  .contains-task-list {
-    input[type='checkbox'] {
-      margin: 0 0.5em;
-    }
-  }
-
 }
