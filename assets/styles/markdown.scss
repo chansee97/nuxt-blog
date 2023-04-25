@@ -81,7 +81,7 @@
   }
 
   /* anchor */
-  :not(h1, h2, h3, h4, h5, h6, sup) > a {
+  :not(h1, h2, h3, h4, h5, h6, ul,sup) > a {
     text-decoration: underline #c9c7c2;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.3em;

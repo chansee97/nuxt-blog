@@ -5,6 +5,6 @@ const post = route.params.post as string
 
 <template>
   <section>
-    <ContentDoc :path="post" class="prose" />
+    <ContentDoc :path="post" />
   </section>
 </template>

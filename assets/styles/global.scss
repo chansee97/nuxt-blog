@@ -27,17 +27,30 @@
 }
 
 html,
-body,#nuxt-root {
+body,
+#nuxt-root {
   height: 100%;
 }
 
-html{
+html {
   line-height: 1.75;
   color: var(--primary);
   background-color: var(--c-bg);
   scroll-behavior: smooth;
 }
 
-pre,code{
-  font-family: "Source Code Pro", ui-monospace, monospace;
+pre,
+code {
+  font-family: 'Source Code Pro', ui-monospace, monospace;
+}
+
+.link {
+  text-decoration: underline #c9c7c2;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+  transition: var(--common-transition);
+
+  &:hover {
+    text-decoration-color: currentcolor;
+  }
 }
