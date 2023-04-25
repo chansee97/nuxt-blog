@@ -5,6 +5,17 @@ const post = route.params.post as string
 
 <template>
   <section>
-    <ContentDoc :path="post" />
+    <ContentDoc :path="post">
+      <template #default="{ doc }">
+        <DocTitle :article="doc" />
+        <ContentRenderer :value="doc" />
+      </template>
+      <template #empty>
+        <h1>Document is empty</h1>
+      </template>
+      <template #not-found>
+        <h1>Document not found</h1>
+      </template>
+    </ContentDoc>
   </section>
 </template>
