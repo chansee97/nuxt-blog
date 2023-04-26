@@ -6,14 +6,14 @@ export const siteConfig = {
 }
 
 export const siteSources = {
-  // github: {
-  //   prefix: '/weekly', // Prefix for routes used to query contents
-  //   driver: 'github', // Driver used to fetch contents (view unstorage documentation)
-  //   repo: 'chansee97/blog-posts',
-  //   branch: 'main',
-  //   // dir: '', // Directory where contents are located. It could be a subdirectory of the repository.
-  //   // Imagine you have a blog inside your content folder. You can set this option to `content/blog` with the prefix option to `/blog` to avoid conflicts with local files.
-  // },
+  github: {
+    prefix: '/weekly', // Prefix for routes used to query contents
+    driver: 'github', // Driver used to fetch contents (view unstorage documentation)
+    repo: 'chansee97/blog-posts',
+    branch: 'main',
+    // dir: '', // Directory where contents are located. It could be a subdirectory of the repository.
+    // Imagine you have a blog inside your content folder. You can set this option to `content/blog` with the prefix option to `/blog` to avoid conflicts with local files.
+  },
 }
 
 export const navLinks = [
