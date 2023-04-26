@@ -1,11 +1,12 @@
 <script setup lang="ts">
 const route = useRoute()
-const post = route.params.post as string
+const post = route.params.post as Array<string>
+const path = post.join('/')
 </script>
 
 <template>
   <section class="prose">
-    <ContentDoc :path="post">
+    <ContentDoc :path="path">
       <template #default="{ doc }">
         <doc-toc :toc="doc.body.toc" />
         <DocTitle :article="doc" />

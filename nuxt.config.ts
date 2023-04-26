@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { siteConfig } from './site.config'
+import { siteConfig, siteSources } from './site.config'
 
 export default defineNuxtConfig({
   modules: [
@@ -8,6 +8,11 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/stylelint-module',
   ],
+  runtimeConfig: {
+    public: {
+      apiBase: '/config_token',
+    },
+  },
   app: {
     rootId: 'nuxt-root',
     head: {
@@ -32,10 +37,7 @@ export default defineNuxtConfig({
     },
   },
   content: {
-    // My custom configuration
-    markdown: {
-      // anchorLinks: false,
-    },
+    sources: siteSources,
     highlight: {
       theme: {
         // Default theme (same as single string)

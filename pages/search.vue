@@ -29,33 +29,25 @@ watchEffect(async () => {
 
 <template>
   <div>
-    <input
-      v-model="searchValue"
-      placeholder="Search post title / description / tag"
-      class="search-input mb-2em"
-    >
+    <input v-model="searchValue" placeholder="Search post title / description / tag" class="search-input mb-2em">
     <ul class="flex flex-col gap-2em">
-      <cell
-        v-for="article in queryResult"
-        :key="article._path"
-        :article="article"
-      />
+      <cell v-for="article in queryResult" :key="article._path" :article="article" />
     </ul>
   </div>
 </template>
 
 <style>
-  .search-input {
-    width: 100%;
-    padding: 1em;
-    background-color: var(--input-bg);
-    border-bottom: 2px solid var(--common-bd);
-    border-radius: var(--common-rd);
-    outline: none;
-    transition: var(--common-transition);
-  }
+.search-input {
+  width: 100%;
+  padding: 1em;
+  background-color: var(--input-bg);
+  border-bottom: 2px solid var(--common-bd);
+  border-radius: var(--common-rd);
+  outline: none;
+  transition: var(--common-transition);
+}
 
-  .search-input:focus {
-    border-color: currentcolor;
-  }
+.search-input:focus {
+  border-color: currentcolor;
+}
 </style>
