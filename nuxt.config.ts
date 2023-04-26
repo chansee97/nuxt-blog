@@ -11,6 +11,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       apiBase: '/config_token',
+      sourcesBase: process.env.NUXT_SOURCES_BASE,
     },
   },
   app: {
