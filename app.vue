@@ -8,7 +8,7 @@
 <style>
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.4s;
+  transition: all 0.3s;
 }
 
 .page-enter-from,

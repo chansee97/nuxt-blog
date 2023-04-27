@@ -1,9 +1,16 @@
 <script setup lang="ts">
 const { data } = await useAsyncData('navigation', () => fetchContentNavigation())
+// const dataTitleList = data.value?.filter(item => item.title.toUpperCase() === 'GITHUB')
+// const isGithub = dataTitleList && dataTitleList.length > 0
+// if (isGithub) {
+//   data.value = []
+// }
+
 if (!data.value)
   data.value = []
 const route = useRoute()
 const category = route.query.category as string
+
 const navigation = data.value && data.value.filter(item => item.children)
 const dirPath = ref(category || navigation[0]._path || '/')
 

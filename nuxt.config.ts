@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { siteConfig, siteSources } from './site.config'
+import { siteConfig } from './site.config'
 
 export default defineNuxtConfig({
   modules: [
@@ -40,7 +40,16 @@ export default defineNuxtConfig({
     },
   },
   content: {
-    sources: siteSources,
+    sources: {
+      github: {
+        prefix: process.env.NUXT_GITHUB_PREFIX || '/github', // Prefix for routes used to query contents
+        driver: 'github', // Driver used to fetch contents (view unstorage documentation)
+        repo: process.env.NUXT_GITHUB_REPO,
+        branch: process.env.NUXT_GITHUB_BRANCH || 'main',
+        // dir: 'content', // Directory where contents are located. It could be a subdirectory of the repository.
+        // Imagine you have a blog inside your content folder. You can set this option to `content/blog` with the prefix option to `/blog` to avoid conflicts with local files.
+      },
+    },
     highlight: {
       theme: {
         // Default theme (same as single string)
