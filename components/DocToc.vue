@@ -3,7 +3,7 @@ const props = defineProps(['toc'])
 </script>
 
 <template>
-  <nav class="hidden xl:block op-0 hover:op-70 transition-opacity duration-400 fixed  top-50% right-2em -translate-y-1/2 text-0.9em">
+  <nav class="hidden xl:block op-20 hover:op-80 transition-opacity duration-400 fixed  top-50% right-2em -translate-y-1/2 text-0.9em">
     <ul class="w-25ch">
       <li v-for="(h2, h2Index) in props.toc.links" :key="h2Index" class="list-none">
         <a :href="`#${h2.id}`">{{ h2.text }}</a>

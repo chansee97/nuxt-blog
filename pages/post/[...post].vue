@@ -8,15 +8,15 @@ const path = post.join('/')
   <section class="prose">
     <ContentDoc :path="path">
       <template #default="{ doc }">
-        <doc-toc :toc="doc.body.toc" />
-        <DocTitle :article="doc" />
-        <ContentRenderer :value="doc" />
+        <doc-render :article="doc" />
       </template>
+
       <template #empty>
         <h1 class="text-center">
           Document is empty
         </h1>
       </template>
+
       <template #not-found>
         <h1 class="text-center">
           Document not found

@@ -17,6 +17,7 @@ export default defineNuxtConfig({
   },
   app: {
     rootId: 'nuxt-root',
+    pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       meta: [
         { name: 'description', content: siteConfig.description },

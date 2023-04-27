@@ -6,13 +6,21 @@ const safeNavIcon = navLinks.map(link => link.icon)
 export default defineConfig({
   // ...UnoCSS options
   shortcuts: {
-    hover: 'op-70 hover:op-100 cursor-pointer transition-opacity',
-    bd: 'border-gray-500 border-1',
+    'flex-center': 'flex items-center justify-center',
+    'hover': 'op-70 hover:op-100 cursor-pointer transition-opacity',
+    'deep-hover': 'op-20 hover:op-70 cursor-pointer transition-opacity',
+    'bd': 'border-gray-500 border-1',
+    'text-deep': 'c-black dark:c-white',
   },
   theme: {
     colors: {
       primary: 'var(--primary)',
       container: 'var(--c-bg)',
+    },
+    extend: {
+      borderRadius: {
+        common: 'var(--common-rd)',
+      },
     },
   },
   presets: [
