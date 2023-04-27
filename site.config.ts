@@ -7,7 +7,7 @@ export const siteConfig = {
 
 export const siteSources = {
   // github: {
-  //   prefix: '/weekly', // Prefix for routes used to query contents
+  //   prefix: '/github', // Prefix for routes used to query contents
   //   driver: 'github', // Driver used to fetch contents (view unstorage documentation)
   //   repo: 'chansee97/blog-posts',
   //   branch: 'main',

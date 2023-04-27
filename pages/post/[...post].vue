@@ -13,10 +13,14 @@ const path = post.join('/')
         <ContentRenderer :value="doc" />
       </template>
       <template #empty>
-        <h1>Document is empty</h1>
+        <h1 class="text-center">
+          Document is empty
+        </h1>
       </template>
       <template #not-found>
-        <h1>Document not found</h1>
+        <h1 class="text-center">
+          Document not found
+        </h1>
       </template>
     </ContentDoc>
   </section>

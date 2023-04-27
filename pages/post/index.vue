@@ -9,7 +9,9 @@
         <Cell v-for="article in list" :key="article._path" :article="article" />
       </template>
       <template #not-found>
-        <p>No articles found.</p>
+        <h1 class="text-center">
+          No articles found.
+        </h1>
       </template>
     </ContentList>
   </ul>

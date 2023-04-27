@@ -10,8 +10,9 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      apiBase: '/config_token',
-      sourcesBase: process.env.NUXT_SOURCES_BASE,
+      GITHUB_REPO: process.env.NUXT_GITHUB_REPO,
+      GITHUB_PREFIX: process.env.NUXT_GITHUB_PREFIX,
+      GITHUB_BRANCH: process.env.NUXT_GITHUB_BRANCH,
     },
   },
   app: {
