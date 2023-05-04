@@ -6,13 +6,13 @@ const props = defineProps(['article'])
 
 <template>
   <NuxtLink :to="`/post${props.article._path}`">
-    <li :title="props.article.title" class="hover list-none">
-      <div class="text-lg">
+    <li :title="props.article.title" class="hover list-none flex flex-col md:(gap-2 flex-row items-center)">
+      <span class="text-lg">
         {{ props.article.title }}
-      </div>
-      <div class="text-sm op-70">
+      </span>
+      <span class="text-sm op-70">
         {{ formattedDate(props.article.date) }}
-      </div>
+      </span>
     </li>
   </NuxtLink>
 </template>

@@ -41,14 +41,13 @@ export default defineNuxtConfig({
   },
   content: {
     sources: {
-      github: {
-        prefix: process.env.NUXT_GITHUB_PREFIX || '/github', // Prefix for routes used to query contents
-        driver: 'github', // Driver used to fetch contents (view unstorage documentation)
-        repo: process.env.NUXT_GITHUB_REPO,
-        branch: process.env.NUXT_GITHUB_BRANCH || 'main',
-        // dir: 'content', // Directory where contents are located. It could be a subdirectory of the repository.
-        // Imagine you have a blog inside your content folder. You can set this option to `content/blog` with the prefix option to `/blog` to avoid conflicts with local files.
-      },
+      // github: {
+      //   prefix: process.env.NUXT_GITHUB_PREFIX, // Prefix for routes used to query contents
+      //   driver: 'github', // Driver used to fetch contents (view unstorage documentation)
+      //   repo: process.env.NUXT_GITHUB_REPO,
+      //   branch: process.env.NUXT_GITHUB_BRANCH,
+      //   // dir: 'content', // Directory where contents are located. It could be a subdirectory of the repository.
+      // },
     },
     highlight: {
       theme: {

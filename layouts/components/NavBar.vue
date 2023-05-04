@@ -10,13 +10,15 @@ const toogleTheme = useToggle(isDark)
 
 <template>
   <nav class="flex items-center gap-1.5em">
-    <template v-for="link in navLinks" :key="link.path">
+    <span v-for="link in navLinks" :key="link.path" :class="[link.mobileShow ? '' : 'hidden md:block']">
       <NuxtLink v-if="link.path.startsWith('/')" :title="link.title" :to="link.path" class="hover">
         <span class="hidden md:inline">{{ link.title }}</span>
         <div :class="link.icon" class="md:hidden" />
       </NuxtLink>
-      <a v-else :title="link.title" :href="link.path" class="hover" :class="[link.icon]" target="_blank" />
-    </template>
+      <a v-else :title="link.title" :href="link.path" class="hover" target="_blank">
+        <div :class="[link.icon]" />
+      </a>
+    </span>
 
     <a title="Toggle Color Scheme" class="dark:i-icon-park-outline-moon i-icon-park-outline-sun hover" @click="toogleTheme()" />
   </nav>
