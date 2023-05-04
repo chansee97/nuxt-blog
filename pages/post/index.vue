@@ -29,17 +29,17 @@ function changeTag(path: string) {
 
 <template>
   <div>
-    <ul class="flex gap-1em sm:text-3xl mb-2em">
+    <ul class="flex gap-1em  mb-2em">
       <li
         v-for="(item) in navigation" :key="item._path"
         class="cursor-pointer "
         :class="item._path === dirPath ? 'text-deep' : 'deep-hover'"
         @click="changeTag(item._path)"
       >
-        {{ item.title }}
+        <span class="text-title"> {{ item.title }}</span>
       </li>
     </ul>
-    <ul class="flex flex-col gap-3em">
+    <ul class="flex flex-col gap-2em">
       <ContentList :path="dirPath">
         <template #default="{ list }">
           <Cell v-for="article in list" :key="article._path" :article="article" />

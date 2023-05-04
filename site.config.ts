@@ -13,6 +13,12 @@ export const navLinks = [
     mobileShow: true,
   },
   {
+    title: 'Tags',
+    path: '/tags',
+    icon: 'i-icon-park-outline-tag-one',
+    mobileShow: true,
+  },
+  {
     title: 'Search',
     path: '/search',
     icon: 'i-icon-park-outline-search',
