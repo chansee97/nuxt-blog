@@ -5,7 +5,6 @@ const tag = route.params.tag as string
 const queryResult = ref()
 queryResult.value = await queryContent()
   .where({
-
     tags: {
       $contains: tag,
     },
@@ -23,6 +22,9 @@ queryResult.value = await queryContent()
     </h1>
     <ul>
       <cell v-for="article in queryResult" :key="article._path" :article="article" />
+      <h1 v-if="queryResult.length === 0" class="text-2xl text-center">
+        Not Found Any Document😗
+      </h1>
     </ul>
   </div>
 </template>

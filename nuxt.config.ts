@@ -8,13 +8,6 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/stylelint-module',
   ],
-  runtimeConfig: {
-    public: {
-      GITHUB_REPO: process.env.NUXT_GITHUB_REPO,
-      GITHUB_PREFIX: process.env.NUXT_GITHUB_PREFIX,
-      GITHUB_BRANCH: process.env.NUXT_GITHUB_BRANCH,
-    },
-  },
   app: {
     rootId: 'nuxt-root',
     head: {

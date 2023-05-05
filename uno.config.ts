@@ -31,7 +31,7 @@ export default defineConfig({
     presetWebFonts({
       provider: 'google',
       fonts: {
-        sans: ['Comme', 'Noto Sans Simplified Chinese'],
+        sans: ['Lato', 'Noto Sans Simplified Chinese'],
         mono: ['Source Code Pro:400,700'],
       },
     }),
