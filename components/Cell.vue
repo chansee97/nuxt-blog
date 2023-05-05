@@ -6,7 +6,7 @@ const props = defineProps(['article'])
 
 <template>
   <NuxtLink :to="`/post${props.article._path}`">
-    <li :title="props.article.title" class="hover list-none flex flex-col md:(gap-2 flex-row items-center)">
+    <li :title="props.article.title" class="hover list-none mb-6 mt-2 flex flex-col md:(gap-2 flex-row items-center)">
       <span class="text-lg">
         {{ props.article.title }}
       </span>

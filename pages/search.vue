@@ -30,7 +30,7 @@ watchEffect(async () => {
 <template>
   <div>
     <input v-model="searchValue" placeholder="Search post title / description / tag" class="search-input mb-2em">
-    <ul class="flex flex-col gap-2em">
+    <ul>
       <cell v-for="article in queryResult" :key="article._path" :article="article" />
     </ul>
   </div>
@@ -42,7 +42,6 @@ watchEffect(async () => {
   padding: 1em;
   background-color: var(--input-bg);
   border-bottom: 2px solid var(--common-bd);
-  border-radius: var(--common-rd);
   outline: none;
   transition: var(--common-transition);
 }

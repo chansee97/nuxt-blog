@@ -31,12 +31,18 @@ export default defineConfig({
     presetWebFonts({
       provider: 'google',
       fonts: {
-        sans: ['Poppins', 'Noto Sans Simplified Chinese'],
+        sans: ['Comme', 'Noto Sans Simplified Chinese'],
         mono: ['Source Code Pro:400,700'],
       },
     }),
     presetAttributify (),
     presetIcons({
+      extraProperties: {
+        'display': 'inline-block',
+        'vertical-align': 'text-bottom',
+        'width': '1.2em',
+        'height': '1.2em',
+      },
       collections: {
         'icon-park-outline': () => import('@iconify-json/icon-park-outline/icons.json').then(i => i.default),
       },

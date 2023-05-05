@@ -21,7 +21,7 @@ queryResult.value = await queryContent()
         Tags
       </NuxtLink> / {{ tag }}
     </h1>
-    <ul class="flex flex-col gap-2em">
+    <ul>
       <cell v-for="article in queryResult" :key="article._path" :article="article" />
     </ul>
   </div>

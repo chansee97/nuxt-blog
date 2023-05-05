@@ -1,20 +1,17 @@
 <script setup lang="ts">
-const { data } = await useAsyncData('navigation', () => fetchContentNavigation())
-// const dataTitleList = data.value?.filter(item => item.title.toUpperCase() === 'GITHUB')
-// const isGithub = dataTitleList && dataTitleList.length > 0
-// if (isGithub) {
-//   data.value = []
-// }
+import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
 
+const route = useRoute()
+const router = useRouter()
+
+const { data } = await useAsyncData('navigation', () => fetchContentNavigation())
 if (!data.value)
   data.value = []
-const route = useRoute()
+const navigation = data.value && data.value.filter(item => item.children)
+
 const category = route.query.category as string
 
-const navigation = data.value && data.value.filter(item => item.children)
 const dirPath = ref(category || navigation[0]._path || '/')
-
-const router = useRouter()
 
 function changeTag(path: string) {
   dirPath.value = path
@@ -25,6 +22,28 @@ function changeTag(path: string) {
     },
   })
 }
+
+const posts = ref()
+watchEffect(async () => {
+  const postsBySort = await queryContent(dirPath.value)
+    .sort({ date: -1 })
+    .find()
+
+  const markedPosts: any = []
+  let currentYear = -1
+  postsBySort.forEach((post: ParsedContent) => {
+    const year = new Date(post.date).getFullYear()
+    if (year !== currentYear && !isNaN(year)) {
+      markedPosts.push({
+        isMarked: true,
+        year,
+      })
+      currentYear = year
+    }
+    markedPosts.push(post)
+  })
+  posts.value = markedPosts
+})
 </script>
 
 <template>
@@ -39,17 +58,13 @@ function changeTag(path: string) {
         <span class="text-title"> {{ item.title }}</span>
       </li>
     </ul>
-    <ul class="flex flex-col gap-2em">
-      <ContentList :path="dirPath">
-        <template #default="{ list }">
-          <Cell v-for="article in list" :key="article._path" :article="article" />
-        </template>
-        <template #not-found>
-          <h1 class="text-center">
-            No articles found.
-          </h1>
-        </template>
-      </ContentList>
+    <ul>
+      <template v-for="(article, index) in posts" :key="index">
+        <div v-if="article.isMarked" class="relative pointer-events-none h-20">
+          <span class="text-8em font-700 op-5 absolute -top-0.2em -left-0.3em">{{ article.year }}</span>
+        </div>
+        <Cell v-else :article="article" />
+      </template>
     </ul>
   </div>
 </template>
