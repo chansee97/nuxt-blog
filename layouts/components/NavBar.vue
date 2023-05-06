@@ -1,11 +1,6 @@
 <script setup lang="ts">
-import { useDark, useToggle } from '@vueuse/core'
+import DarkMode from './DarkMode.vue'
 import { navLinks } from '@/site.config'
-
-const isDark = useDark({
-  storageKey: 'blog-theme-mode',
-})
-const toogleTheme = useToggle(isDark)
 </script>
 
 <template>
@@ -19,7 +14,6 @@ const toogleTheme = useToggle(isDark)
         <div :class="[link.icon]" />
       </a>
     </span>
-
-    <a title="Toggle Color Scheme" class="dark:i-icon-park-outline-moon i-icon-park-outline-sun hover" @click="toogleTheme()" />
+    <DarkMode />
   </nav>
 </template>
