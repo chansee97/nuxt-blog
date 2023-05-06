@@ -37,7 +37,7 @@ function toggleViewTransition(event: MouseEvent) {
       },
       {
         duration: 500,
-        easing: 'ease',
+        easing: 'ease-in',
         pseudoElement: isDark
           ? '::view-transition-old(root)'
           : '::view-transition-new(root)',

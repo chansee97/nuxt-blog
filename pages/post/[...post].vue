@@ -5,10 +5,11 @@ const path = post.join('/')
 </script>
 
 <template>
-  <section class="prose">
+  <section class="prose relative">
     <ContentDoc :path="path">
       <template #default="{ doc }">
         <doc-render :article="doc" />
+        <doc-toc :toc="doc.body.toc" />
       </template>
 
       <template #empty>
