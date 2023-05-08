@@ -33,7 +33,7 @@ export default defineConfig({
       provider: 'google',
       fonts: {
         sans: ['Lato', 'Noto Sans Simplified Chinese'],
-        mono: ['Source Code Pro:400,700'],
+        mono: ['Fira Mono:400,700'],
       },
     }),
     presetAttributify (),
