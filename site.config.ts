@@ -31,17 +31,17 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    title: 'weibo',
+    title: 'Weibo',
     path: 'https://weibo.com/',
     icon: 'i-simple-icons-sinaweibo',
   },
   {
-    title: 'bilibili',
+    title: 'Bilibili',
     path: 'https://www.bilibili.com/',
     icon: 'i-simple-icons-bilibili',
   },
   {
-    title: 'twitter',
+    title: 'Twitter',
     path: 'https://twitter.com/',
     icon: 'i-simple-icons-twitter',
   },
