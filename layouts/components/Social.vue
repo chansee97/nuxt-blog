@@ -10,7 +10,7 @@ import { siteConfig, socialLinks } from '@/site.config'
       </a>
     </div>
     <div
-      class="text-6xl pointer-events-none op-10 text-end lh-2em"
+      class="text-6xl pointer-events-none op-10 text-end lh-2em select-none"
       style=" writing-mode: vertical-rl;"
     >
       {{ siteConfig.author }}

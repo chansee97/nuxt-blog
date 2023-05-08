@@ -60,8 +60,8 @@ watchEffect(async () => {
     </ul>
     <ul>
       <template v-for="(article, index) in posts" :key="index">
-        <div v-if="article.isMarked" class="relative pointer-events-none h-20">
-          <span class="text-8em font-700 op-5 absolute -top-0.2em -left-0.3em">{{ article.year }}</span>
+        <div v-if="article.isMarked" class="relative pointer-events-none select-none h-20">
+          <span class="text-8em font-700 op-10 absolute -top-0.2em -left-0.3em">{{ article.year }}</span>
         </div>
         <Cell v-else :article="article" />
       </template>
