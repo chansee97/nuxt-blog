@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import DarkMode from './DarkMode.vue'
-
-// import Avatar from './Avatar.vue'
 import { navLinks } from '@/site.config'
 </script>
 
