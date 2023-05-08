@@ -1,7 +1,8 @@
 import { defineConfig, presetAttributify, presetIcons, presetUno, presetWebFonts, transformerVariantGroup } from 'unocss'
-import { navLinks } from './site.config'
+import { navLinks, socialLinks } from './site.config'
 
-const safeNavIcon = navLinks.map(link => link.icon)
+const compoundLinks = [...navLinks, ...socialLinks]
+const safeNavIcon = compoundLinks.map(link => link.icon)
 
 export default defineConfig({
   // ...UnoCSS options
@@ -45,6 +46,7 @@ export default defineConfig({
       },
       collections: {
         'icon-park-outline': () => import('@iconify-json/icon-park-outline/icons.json').then(i => i.default),
+        'simple-icons': () => import('@iconify-json/simple-icons/icons.json').then(i => i.default),
       },
     }),
   ],

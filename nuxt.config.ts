@@ -62,6 +62,7 @@ export default defineNuxtConfig({
     '@unocss/reset/tailwind.css',
     '@/assets/styles/global.scss',
     '@/assets/styles/theme.css',
+    '@/assets/styles/transition.css',
     '@/assets/styles/markdown.scss',
   ],
   stylelint: {

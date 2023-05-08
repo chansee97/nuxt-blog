@@ -36,7 +36,7 @@ function toggleViewTransition(event: MouseEvent) {
         clipPath: isDark ? [...clipPath].reverse() : clipPath,
       },
       {
-        duration: 500,
+        duration: 300,
         easing: 'ease-in',
         pseudoElement: isDark
           ? '::view-transition-old(root)'

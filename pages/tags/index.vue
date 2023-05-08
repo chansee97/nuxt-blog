@@ -20,7 +20,7 @@ const tagsContent = contentQuery
 </script>
 
 <template>
-  <div>
+  <div class="slide-enter-content">
     <h1 class="text-title mb-2em">
       Tags
     </h1>

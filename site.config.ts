@@ -10,30 +10,44 @@ export const navLinks = [
     title: 'Blog',
     path: '/post',
     icon: 'i-icon-park-outline-align-text-right-one',
-    mobileShow: true,
   },
   {
     title: 'Tags',
     path: '/tags',
     icon: 'i-icon-park-outline-tag-one',
-    mobileShow: true,
   },
   {
     title: 'Search',
     path: '/search',
     icon: 'i-icon-park-outline-search',
-    mobileShow: true,
   },
   {
     title: 'About',
-    path: '/about',
+    path: '/',
     icon: 'i-icon-park-outline-grinning-face-with-open-mouth',
-    mobileShow: true,
+  },
+
+]
+
+export const socialLinks = [
+  {
+    title: 'weibo',
+    path: 'https://weibo.com/',
+    icon: 'i-simple-icons-sinaweibo',
+  },
+  {
+    title: 'bilibili',
+    path: 'https://www.bilibili.com/',
+    icon: 'i-simple-icons-bilibili',
+  },
+  {
+    title: 'twitter',
+    path: 'https://twitter.com/',
+    icon: 'i-simple-icons-twitter',
   },
   {
     title: 'Github',
     path: 'https://github.com/chansee97',
     icon: 'i-icon-park-outline-github',
-    mobileShow: false,
   },
 ]

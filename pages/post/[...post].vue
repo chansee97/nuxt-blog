@@ -5,9 +5,10 @@ const path = post.join('/')
 </script>
 
 <template>
-  <section class="prose relative">
+  <section class="prose relative slide-enter-content">
     <ContentDoc :path="path">
       <template #default="{ doc }">
+        <DocBack />
         <doc-render :article="doc" />
         <doc-toc :toc="doc.body.toc" />
       </template>

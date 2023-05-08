@@ -5,5 +5,4 @@ const props = defineProps(['article'])
 <template>
   <DocTitle :article="props.article" />
   <ContentRenderer :value="props.article" />
-  <DocBack />
 </template>
