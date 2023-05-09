@@ -1,7 +1,10 @@
 <script setup lang="ts">
+import { useDebounceFn } from '@vueuse/core'
+
 const searchValue = ref('')
 const queryResult = ref()
-watchEffect(async () => {
+
+const getQueryResult = useDebounceFn(async () => {
   if (!searchValue.value) {
     queryResult.value = []
     return
@@ -24,7 +27,9 @@ watchEffect(async () => {
       ],
     })
     .find()
-})
+}, 600)
+
+watch(searchValue, getQueryResult)
 </script>
 
 <template>
