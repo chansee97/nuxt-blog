@@ -1,10 +1,8 @@
 <script setup lang="ts">
-/**
- * 检查浏览器是否支持“视图转换”动画
- * @returns {boolean} 是否支持
- */
 function supportsViewTransition() {
-  return (typeof document.startViewTransition === 'function')
+  // @ts-expect-error: Transition API
+  return document.startViewTransition
+    && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
 }
 
 let isDark: boolean
@@ -16,21 +14,22 @@ function toggleThemeClass() {
   root.classList.add(isDark ? 'light' : 'dark')
 }
 function toggleViewTransition(event: MouseEvent) {
+  const x = event.clientX
+  const y = event.clientY
+  const endRadius = Math.hypot(
+    Math.max(x, innerWidth - x),
+    Math.max(y, innerHeight - y),
+  )
+  const clipPath = [
+        `circle(0px at ${x}px ${y}px)`,
+        `circle(${endRadius}px at ${x}px ${y}px)`,
+  ]
+  // @ts-expect-error: Transition API
   const transition = document.startViewTransition(() => {
     toggleThemeClass()
   })
 
   transition.ready.then(() => {
-    const x = event.clientX
-    const y = event.clientY
-    const endRadius = Math.hypot(
-      Math.max(x, innerWidth - x),
-      Math.max(y, innerHeight - y),
-    )
-    const clipPath = [
-        `circle(0px at ${x}px ${y}px)`,
-        `circle(${endRadius}px at ${x}px ${y}px)`,
-    ]
     document.documentElement.animate(
       {
         clipPath: isDark ? [...clipPath].reverse() : clipPath,
@@ -56,5 +55,5 @@ function toogleTheme(event: MouseEvent) {
 </script>
 
 <template>
-  <a title="Toggle Color Scheme" class="dark:i-icon-park-outline-moon i-icon-park-outline-sun hover" @click="toogleTheme" />
+  <div title="Toggle Color Scheme" class="dark:i-icon-park-outline-moon i-icon-park-outline-sun hover" @click="toogleTheme" />
 </template>

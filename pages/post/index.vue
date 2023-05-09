@@ -48,11 +48,11 @@ watchEffect(async () => {
 
 <template>
   <div>
-    <ul class="flex gap-1em  mb-2em">
+    <ul class="flex gap-1em mb-2em">
       <li
         v-for="(item) in navigation" :key="item._path"
         class="cursor-pointer "
-        :class="item._path === dirPath ? 'text-deep' : 'deep-hover'"
+        :class="item._path === dirPath ? 'text-deep font-bold' : 'deep-hover'"
         @click="changeTag(item._path)"
       >
         <span class="text-title"> {{ item.title }}</span>
@@ -61,7 +61,9 @@ watchEffect(async () => {
     <ul>
       <template v-for="(article, index) in posts" :key="index">
         <div v-if="article.isMarked" class="relative pointer-events-none select-none h-20">
-          <span class="text-8em font-700 op-10 absolute -top-0.2em -left-0.3em">{{ article.year }}</span>
+          <span
+            class="text-8em font-bold op-15 absolute -top-0.2em -left-0.3em color-transparent text-stroke-2 text-stroke-hex-aaa"
+          >{{ article.year }}</span>
         </div>
         <Cell v-else :article="article" />
       </template>

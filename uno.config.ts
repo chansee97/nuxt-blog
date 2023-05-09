@@ -32,15 +32,16 @@ export default defineConfig({
     presetWebFonts({
       provider: 'google',
       fonts: {
-        sans: ['Lato', 'Noto Sans Simplified Chinese'],
+        sans: ['Inter', 'Noto Sans Simplified Chinese'],
         mono: ['Fira Mono:400,700'],
+        hand: ['Dancing Script'],
       },
     }),
     presetAttributify (),
     presetIcons({
       extraProperties: {
         'display': 'inline-block',
-        'vertical-align': 'text-bottom',
+        'vertical-align': 'middle',
         'width': '1.2em',
         'height': '1.2em',
       },

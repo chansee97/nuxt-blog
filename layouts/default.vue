@@ -15,7 +15,7 @@ import Social from './components/Social.vue'
   <main class="flex-1 px-7 py-10 w-100%">
     <div class="max-w-70ch m-auto">
       <slot />
+      <Footer />
     </div>
-    <Footer class=" m-auto" />
   </main>
 </template>
