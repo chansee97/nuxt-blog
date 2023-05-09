@@ -12,6 +12,11 @@ export const navLinks = [
     icon: 'i-icon-park-outline-align-text-right-one',
   },
   {
+    title: 'Projects',
+    path: '/projects',
+    icon: 'i-icon-park-outline-blocks-and-arrows',
+  },
+  {
     title: 'Tags',
     path: '/tags',
     icon: 'i-icon-park-outline-tag-one',

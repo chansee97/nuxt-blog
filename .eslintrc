@@ -1,1 +1,6 @@
-{"extends": "@chansee97/eslint-config-vue"}
+{
+  "extends": "@chansee97/eslint-config-vue",
+  "rules": {
+    "vue/dot-location":"off"
+  }
+}

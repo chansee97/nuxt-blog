@@ -29,6 +29,9 @@ watchEffect(async () => {
 
 <template>
   <div class="slide-enter-content">
+    <h1 class="text-title mb-2em font-bold">
+      Search
+    </h1>
     <input v-model="searchValue" placeholder="Search post title / description / tag" class="search-input mb-2em">
     <ul>
       <cell v-for="article in queryResult" :key="article._path" :article="article" />

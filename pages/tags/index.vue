@@ -21,7 +21,7 @@ const tagsContent = contentQuery
 
 <template>
   <div class="slide-enter-content">
-    <h1 class="text-title mb-2em">
+    <h1 class="text-title mb-2em font-bold">
       Tags
     </h1>
     <ul class="flex gap-1em flex-wrap">

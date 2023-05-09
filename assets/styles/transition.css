@@ -10,7 +10,7 @@
   }
 }
 
-.slide-enter-content > * {
+[slide-enter], .slide-enter, .slide-enter-content > * {
   --stagger: 0;
   --delay: 150ms;
   --start: 0ms;
