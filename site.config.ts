@@ -1,6 +1,6 @@
 export const siteConfig = {
-  author: 'Chansee97',
-  title: 'Chansee97-Blog',
+  author: 'Rock Chen',
+  title: 'Rock Chen - Blog',
   description: 'My blog site.',
   lang: 'zh-CN',
 }
@@ -36,18 +36,18 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    title: 'Weibo',
-    path: 'https://weibo.com/',
-    icon: 'i-simple-icons-sinaweibo',
+    title: '掘金',
+    path: 'https://juejin.cn/user/3826745248595550',
+    icon: 'i-icon-park-outline-crab',
   },
   {
     title: 'Bilibili',
-    path: 'https://www.bilibili.com/',
+    path: 'https://space.bilibili.com/3850132',
     icon: 'i-simple-icons-bilibili',
   },
   {
     title: 'Twitter',
-    path: 'https://twitter.com/',
+    path: 'https://twitter.com/Rockchen97',
     icon: 'i-simple-icons-twitter',
   },
   {

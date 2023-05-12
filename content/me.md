@@ -1,6 +1,6 @@
-# Chansee97
+# Rock Chen
 
-Hi! I am chansee97, a fontend programmer
+Hi! I am Rock Chen, a fontend programmer
 
 ## hello
 

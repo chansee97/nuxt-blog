@@ -1,17 +1,18 @@
 <script setup lang="ts">
-function supportsViewTransition() {
-  // @ts-expect-error: Transition API
-  return document.startViewTransition
-    && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
-}
+// import { useDark, useToggle } from '@vueuse/core'
+
+// const isDark = useDark({
+//   disableTransition: false,
+// })
+// const toggleDark = useToggle(isDark)
 
 let isDark: boolean
 
-function toggleThemeClass() {
+function toggleDark() {
   const root = document.documentElement
   isDark = root.classList.contains('dark')
-  root.classList.remove(isDark ? 'dark' : 'light')
-  root.classList.add(isDark ? 'light' : 'dark')
+  root.classList.remove(isDark ? 'dark' : '-')
+  root.classList.add(isDark ? '-' : 'dark')
 }
 function toggleViewTransition(event: MouseEvent) {
   const x = event.clientX
@@ -25,8 +26,9 @@ function toggleViewTransition(event: MouseEvent) {
         `circle(${endRadius}px at ${x}px ${y}px)`,
   ]
   // @ts-expect-error: Transition API
-  const transition = document.startViewTransition(() => {
-    toggleThemeClass()
+  const transition = document.startViewTransition(async () => {
+    toggleDark()
+    await nextTick()
   })
 
   transition.ready.then(() => {
@@ -46,11 +48,15 @@ function toggleViewTransition(event: MouseEvent) {
 }
 
 function toogleTheme(event: MouseEvent) {
-  const isSupport = supportsViewTransition()
-  if (isSupport)
-    toggleViewTransition(event)
-  else
-    toggleThemeClass()
+  // @ts-expect-error: Transition API
+  const isSupport = document.startViewTransition
+    && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+  if (!isSupport) {
+    toggleDark()
+    return
+  }
+  toggleViewTransition(event)
 }
 </script>
 
