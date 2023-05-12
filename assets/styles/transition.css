@@ -12,7 +12,7 @@
 
 [slide-enter], .slide-enter, .slide-enter-content > * {
   --stagger: 0;
-  --delay: 150ms;
+  --delay: 90ms;
   --start: 0ms;
 
   animation: slide-enter 1s both 1;
