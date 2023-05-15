@@ -18,3 +18,8 @@ You should modify the following files
 
 - site.config.ts - base site config
 - content - your article folder
+- pages/projects - your project list
+
+### icon
+- [icon-park-outline](https://icones.js.org/collection/icon-park-outline)
+- [simple-icons](https://icones.js.org/collection/simple-icons)
