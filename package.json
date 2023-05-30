@@ -11,6 +11,7 @@
     "stylelint:fix": "npx stylelint **/*.{css,scss,vue,less,html} --fix"
   },
   "dependencies": {
+    "@giscus/vue": "^2.2.8",
     "@iconify-json/icon-park-outline": "^1.1.11",
     "@iconify-json/simple-icons": "^1.1.52",
     "@unocss/reset": "^0.51.12",

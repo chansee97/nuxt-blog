@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const projectList = [
   {
-    name: 'Current project',
+    name: 'Recent Projects',
     content: [
       {
         name: 'Zeal UI',
