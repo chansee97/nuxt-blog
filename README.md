@@ -1,8 +1,10 @@
-# Nuxt 3 Blog
+<div align="center">
+  <h1>Nuxt 3 Blog</h1>
+</div>
 
 site style form [antfu.me](https://antfu.me/), But base on [nuxt3](https://nuxt.com/)
 
-## Features
+## 💡Features
 
 - Nuxt3 technology stack, ssr rendering, more friendly to seo
 - Adapt to mobile end layout
@@ -12,8 +14,9 @@ site style form [antfu.me](https://antfu.me/), But base on [nuxt3](https://nuxt.
 - Article search function
 - Modified some layout styles on the basis of antfu
 - Remove website information configuration and reduce the mental burden of modifying
+- Comment function based on giscus
 
-## Setup
+## 🔎Setup
 Make sure to install the dependencies:
 ```
 pnpm install
@@ -24,7 +27,7 @@ open dev serve
 pnpm dev
 ```
 
-## usage
+## 📖Usage
 
 You should modify the following files
 
@@ -32,6 +35,6 @@ You should modify the following files
 - content - your article folder
 - pages/projects - your project list
 
-### icon
+### Icon
 - [icon-park-outline](https://icones.js.org/collection/icon-park-outline)
 - [simple-icons](https://icones.js.org/collection/simple-icons)
