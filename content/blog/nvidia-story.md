@@ -4,7 +4,7 @@ url:
 aliases: 
 tags: 
   - 文摘
-title: "Jen-Hsun-Huang's-Nvidia-Story"
+title: 黄仁勋的 Nvidia 故事
 edited date: 2023-06-02 17:58:48
 ---
 

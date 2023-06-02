@@ -4,8 +4,7 @@ url: https://github.com/gscheartA/Improve-your-code
 aliases: 
 tags:
   - 命名
-  - 编码规范
-  - 动词 
+  - 规范
 title: 函数中的动词选取
 edited date: 2023-03-14 12:32:06
 ---
