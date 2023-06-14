@@ -2,9 +2,10 @@
 date: 2023-06-14 15:00:59
 url: 
 aliases: applies-different-styles-based-on-number-of-child-elements
-tags: 
+tags:
+  - CSS
 title: CSS实现根据子元素数量应用不同样式
-edited date: 2023-06-14 15:47:19
+edited date: 2023-06-14 16:45:39
 ---
 在前端的页面布局中经常会出现在子元素个数使用不同的样式的需求，比如文章列表，在较少内容下单列表现，而在元素内容较多时使用双列表现。再比如在页面排版上，可以根据元素内容的多少来修改内容的缩放，位置，颜色等样式
 
@@ -37,7 +38,7 @@ div:has(h1){
 显示结果
 ![](https://img.iamsee.top/pic/20230614152045.png)
 
-## `:has()` + `:nth-child()`
+## `:has()` + `:nth-child ()` 
 
 现在我们知道了 `:has()` 选择器是用来在匹配成功时使用样式的，而加上 `:nth-child()` 就会有根据子元素数量去匹配样式的效果
 例如：
@@ -168,4 +169,4 @@ div:has(h1){
 使用 `:has()` + `:nth-child()` 可以在前端页面中更好的去做页面布局的自适应，也在内容不足的情况下提供了一种简单实用的容错方法。
 
 ![image.png](https://img.iamsee.top/pic/20230614155201.png)
-而在兼容性上除 Firefox 浏览器，其他的浏览器均有较好的支持。
+而 `:has()` 在兼容性上除 Firefox 浏览器，其他的浏览器均有较好的支持。
