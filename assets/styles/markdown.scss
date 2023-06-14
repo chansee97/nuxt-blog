@@ -136,12 +136,8 @@
 
   :not(pre) > code {
     font-weight: bold;
+    background-color: var(--common-bg);
     border-radius: var(--common-rd);
-
-    &::before,
-    &::after {
-      content: '`';
-    }
   }
 
   /* blockquote */
