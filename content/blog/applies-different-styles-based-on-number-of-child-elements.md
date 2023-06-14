@@ -80,7 +80,7 @@ div:has(h1){
 ```
 
 显示效果：
-![image.png](https://img.iamsee.top/pic/20230614153312.png)
+![](https://img.iamsee.top/pic/20230614153312.png)
 
 
 ## 其他使用示例
@@ -131,7 +131,7 @@ div:has(h1){
 效果：
 只有在 5 个及以上子元素的情况下有，某子元素有特定样式（比如轮播图场景）
 
-![image.png](https://img.iamsee.top/pic/20230614153900.png)
+![](https://img.iamsee.top/pic/20230614153900.png)
 
 ### 根据子元素数量文本分栏
 
@@ -162,11 +162,11 @@ div:has(h1){
 ```
 
 显示效果：
-![image.png](https://img.iamsee.top/pic/20230614154352.png)
+![](https://img.iamsee.top/pic/20230614154352.png)
 
 ## 结尾
 
 使用 `:has()` + `:nth-child()` 可以在前端页面中更好的去做页面布局的自适应，也在内容不足的情况下提供了一种简单实用的容错方法。
 
-![image.png](https://img.iamsee.top/pic/20230614155201.png)
+![](https://img.iamsee.top/pic/20230614155201.png)
 而 `:has()` 在兼容性上除 Firefox 浏览器，其他的浏览器均有较好的支持。
