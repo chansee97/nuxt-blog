@@ -21,9 +21,10 @@ export default defineNuxtConfig({
         { 'http-equiv': 'X-UA-Compatible', 'content': 'IE=edge' },
       ],
       script: [
-        {
-          src: 'https://hm.baidu.com/hm.js?1165b073ddedafcd0206d8c5799ad5ff',
-        },
+         {
+        src: '//sdk.51.la/js-sdk-pro.min.js?id=3F57lu6zMWXHeBL1&ck=3F57lu6zMWXHeBL1',
+        id: 'LA_COLLECT'
+      }
       ],
       noscript: [
         { children: 'JavaScript is required' },
