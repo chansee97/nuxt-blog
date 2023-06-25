@@ -21,7 +21,9 @@ export default defineNuxtConfig({
         { 'http-equiv': 'X-UA-Compatible', 'content': 'IE=edge' },
       ],
       script: [
-        { src: './statistics.js' },
+        {
+          src: 'https://hm.baidu.com/hm.js?1165b073ddedafcd0206d8c5799ad5ff',
+        },
       ],
       noscript: [
         { children: 'JavaScript is required' },

@@ -35,12 +35,15 @@ You should modify the following files
 - content - your article folder
 - pages/projects - your project list
 - `pages\post\[...post].vue` - comment config, to [Giscus](https://giscus.app/zh-CN)
-- statistics.js - site data statistics code, can be deleted if not needed
+- statistics code - site data statistics code, can be deleted if not needed
   ``` ts
   // nuxt.config.ts
   script: [
     // ⬇ can be deleted
-    { src: './statistics.js' },
+    {
+      src: 'https://xxxxx',
+    },
+  
   ]
 ```
 
