@@ -20,6 +20,9 @@ export default defineNuxtConfig({
         { charset: 'UTF-8' },
         { 'http-equiv': 'X-UA-Compatible', 'content': 'IE=edge' },
       ],
+      script: [
+        { src: './statistics.js' },
+      ],
       noscript: [
         { children: 'JavaScript is required' },
       ],
@@ -32,15 +35,6 @@ export default defineNuxtConfig({
     },
   },
   content: {
-    sources: {
-      // github: {
-      //   prefix: process.env.NUXT_GITHUB_PREFIX, // Prefix for routes used to query contents
-      //   driver: 'github', // Driver used to fetch contents (view unstorage documentation)
-      //   repo: process.env.NUXT_GITHUB_REPO,
-      //   branch: process.env.NUXT_GITHUB_BRANCH,
-      //   // dir: 'content', // Directory where contents are located. It could be a subdirectory of the repository.
-      // },
-    },
     highlight: {
       theme: {
         // Default theme (same as single string)
