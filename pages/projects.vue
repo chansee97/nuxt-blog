@@ -5,7 +5,7 @@ const projectList = [
     content: [
       {
         name: 'Zeal UI',
-        desc: 'components store, base on Vue3, Ts',
+        desc: 'components store, base on Vue3 and Ts',
         path: 'https://github.com/chansee97/zeal-ui',
       },
     ]
@@ -65,7 +65,7 @@ const projectList = [
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-1em">
         <a v-for="(project, index) in series.content" :key="index" :title="project.name" :href="project.path"
-          target="_blank"  class="flex items-center p-0.5em rounded-sm hover:bg-gray-400:10"
+          target="_blank"  class="flex items-center py-0.5em px-1em rounded-sm hover:bg-gray-400:10"
           >
           <div class="hover w-full">
             <div class="text-lg">{{ project.name }} <span class="text-sm op-50 i-icon-park-outline-efferent-three" />

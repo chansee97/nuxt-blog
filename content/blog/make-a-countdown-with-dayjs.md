@@ -5,7 +5,6 @@ aliases:
 tags:
   - dayjs
 title: 使用dayjs实现倒计时
-edited date: 2023-05-30 10:34:44
 ---
 
 ```html

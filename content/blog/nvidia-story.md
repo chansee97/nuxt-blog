@@ -5,7 +5,6 @@ aliases:
 tags: 
   - 文摘
 title: 黄仁勋的 Nvidia 故事
-edited date: 2023-06-02 17:58:48
 ---
 
 黄仁勋的 Nvidia 故事

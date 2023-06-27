@@ -5,7 +5,6 @@ aliases: applies-different-styles-based-on-number-of-child-elements
 tags:
   - CSS
 title: CSS实现根据子元素数量应用不同样式
-edited date: 2023-06-14 16:45:39
 ---
 在前端的页面布局中经常会出现在子元素个数使用不同的样式的需求，比如文章列表，在较少内容下单列表现，而在元素内容较多时使用双列表现。再比如在页面排版上，可以根据元素内容的多少来修改内容的缩放，位置，颜色等样式
 
