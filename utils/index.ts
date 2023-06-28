@@ -6,3 +6,27 @@ export function formattedDate(date: string) {
   const formattedResult = format(dateObject, 'MMM dd, yyyy')
   return formattedResult
 }
+
+export function insertYearToPosts(posts: any) {
+  let currentYear = -1
+  return posts.reduce(
+    (posts: any, post: any) => {
+      const year = new Date(post.date).getFullYear()
+      if (year !== currentYear && !isNaN(year)) {
+        posts.push({
+          isMarked: true,
+          year,
+        })
+        currentYear = year
+      }
+      posts.push(post)
+      return posts
+    },
+    [],
+  )
+}
+
+export async function getIncludedYearPosts(dirName: string) {
+  const result = await queryContent(dirName).sort({ date: -1 }).find()
+  return insertYearToPosts(result)
+}

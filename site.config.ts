@@ -5,10 +5,25 @@ export const siteConfig = {
   lang: 'zh-CN',
 }
 
+export const subNavLinks = [
+  {
+    title: 'Blog',
+    path: '/blog',
+  },
+  {
+    title: 'Life',
+    path: '/life',
+  },
+  {
+    title: 'Record',
+    path: '/record',
+  },
+]
+
 export const navLinks = [
   {
     title: 'Blog',
-    path: '/post',
+    path: '/blog',
     icon: 'i-icon-park-outline-align-text-right-one',
   },
   {
@@ -55,4 +70,58 @@ export const socialLinks = [
     path: 'https://github.com/chansee97',
     icon: 'i-icon-park-outline-github',
   },
+]
+
+export const projectList = [
+  {
+    name: 'Recent Projects',
+    content: [
+      {
+        name: 'Zeal UI',
+        desc: 'components store, base on Vue3 and Ts',
+        path: 'https://github.com/chansee97/zeal-ui',
+      },
+    ],
+  },
+  {
+    name: 'Projects',
+    content: [
+      {
+        name: 'Nuxt Blog',
+        desc: 'My blog site, base on Nuxt',
+        path: 'https://github.com/chansee97/nuxt-blog',
+      },
+      {
+        name: 'Ench Admin',
+        desc: 'a complete admin template',
+        path: 'https://github.com/chansee97/Ench-admin',
+      },
+    ],
+  },
+  {
+    name: 'Configuration',
+    content: [
+      {
+        name: 'lint-config',
+        desc: 'My configuration with eslint, stylelint, commentslint',
+        path: 'https://github.com/chansee97/lint-config',
+      },
+      {
+        name: 'dotfiles',
+        desc: 'My personal development configuration',
+        path: 'https://github.com/chansee97/dotfiles',
+      },
+    ],
+  },
+  {
+    name: 'Starter',
+    content: [
+      {
+        name: 'Vue-Starter',
+        desc: 'My simply vue starter',
+        path: 'https://github.com/chansee97/Vue-Starter',
+      },
+    ],
+  },
+
 ]

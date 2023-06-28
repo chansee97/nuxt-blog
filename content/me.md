@@ -1,12 +1,12 @@
 # Rock Chen
 
-## 爱好？
+### 爱好？
 喜欢编程，喜欢学习，喜欢不能当饭吃的哲学，喜欢写被现代打印代替的钢笔字
 
-## 博客？
+### 博客？
 我的博客会不定时更新一些我的学习笔记和生活感想，喜欢的话可以多留意，但是不能保证文章质量和频率，毕竟都是随性记录
 
-## 我的技能？
+### 我的技能？
 
 <div class="skill-wrapper">
   <img src="https://img.shields.io/badge/Html-E34F26?style=for-the-badge&logo=html5&logoColor=white"></img>
@@ -37,8 +37,11 @@
   <img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"></img>
   <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"></img>
 </div>
+<div class="skill-wrapper">
+<img src="https://img.shields.io/endpoint?style=social&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D17109%26project%3D%26in%3D0">
+</div>
 
-## 我是谁？
+### 我是谁？
 
 我是 Rock Chen, 一个在钢铁和水泥的森林里默默搬砖的前端码农
 
