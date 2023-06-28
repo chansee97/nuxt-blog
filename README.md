@@ -12,9 +12,9 @@ site style form [antfu.me](https://antfu.me/), But base on [nuxt3](https://nuxt.
 - Use markdown as article format
 - Tag Category View Function
 - Article search function
-- Modified some layout styles on the basis of antfu
-- Remove website information configuration and reduce the mental burden of modifying
-- Comment function based on giscus
+- Integrate website configuration to reduce the mental burden of modification
+- Comment function based on [Giscus](https://giscus.app/zh-CN)
+- Site browsing statistics based on [51.LA](https://v6.51.la/)
 
 ## 🔎Setup
 Make sure to install the dependencies:
@@ -33,8 +33,7 @@ You should modify the following files
 
 - site.config.ts - base site config
 - content - your article folder
-- pages/projects - your project list
-- `pages\post\[...post].vue` - comment config, to [Giscus](https://giscus.app/zh-CN)
+- `pages\p\[...post].vue` - comment config, to [Giscus](https://giscus.app/zh-CN)
 - statistics code - site data statistics code, can be deleted if not needed
   ``` ts
   // nuxt.config.ts
