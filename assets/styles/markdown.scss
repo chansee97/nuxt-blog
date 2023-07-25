@@ -135,6 +135,7 @@
   }
 
   :not(pre) > code {
+    padding-inline: 0.5em;
     font-weight: bold;
     background-color: var(--common-bg);
     border-radius: var(--common-rd);
