@@ -117,11 +117,10 @@ export const projectList = [
     name: 'Starter',
     content: [
       {
-        name: 'Vue-Starter',
+        name: 'Virtuoso',
         desc: 'My simply vue starter',
-        path: 'https://github.com/chansee97/Vue-Starter',
+        path: 'https://github.com/chansee97/virtuoso',
       },
     ],
   },
-
 ]
