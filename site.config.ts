@@ -92,9 +92,14 @@ export const projectList = [
         path: 'https://github.com/chansee97/nuxt-blog',
       },
       {
-        name: 'Ench Admin',
+        name: 'Nova Admin',
         desc: 'a complete admin template',
-        path: 'https://github.com/chansee97/Ench-admin',
+        path: 'https://github.com/chansee97/nova-admin',
+      },
+      {
+        name: 'Nova Admin Nest',
+        desc: 'The nest backend for nova admin',
+        path: 'https://github.com/chansee97/nove-admin-nest',
       },
     ],
   },
