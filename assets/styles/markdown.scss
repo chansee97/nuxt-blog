@@ -135,10 +135,10 @@
   }
 
   :not(pre) > code {
-    padding-inline: 0.5em;
+    padding-inline: 0.3em;
     font-weight: bold;
     background-color: var(--common-bg);
-    border-radius: var(--common-rd);
+    border-radius: 3px;
   }
 
   /* blockquote */
