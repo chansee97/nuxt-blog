@@ -4,6 +4,8 @@
 
 site style form [antfu.me](https://antfu.me/), But base on [nuxt3](https://nuxt.com/)
 
+A new [version](https://github.com/chansee97/nuxt-blog-v2) of article management based on Github issues, simpler and more convenient
+
 ## 💡Features
 
 - Nuxt3 technology stack, ssr rendering, more friendly to seo
