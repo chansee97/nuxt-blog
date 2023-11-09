@@ -74,16 +74,6 @@ export const socialLinks = [
 
 export const projectList = [
   {
-    name: 'Recent Projects',
-    content: [
-      {
-        name: 'Zeal UI',
-        desc: 'components store, base on Vue3 and Ts',
-        path: 'https://github.com/chansee97/zeal-ui',
-      },
-    ],
-  },
-  {
     name: 'Projects',
     content: [
       {
@@ -100,21 +90,6 @@ export const projectList = [
         name: 'Nova Admin Nest',
         desc: 'The nest backend for nova admin',
         path: 'https://github.com/chansee97/nove-admin-nest',
-      },
-    ],
-  },
-  {
-    name: 'Configuration',
-    content: [
-      {
-        name: 'lint-config',
-        desc: 'My configuration with eslint, stylelint, commentslint',
-        path: 'https://github.com/chansee97/lint-config',
-      },
-      {
-        name: 'dotfiles',
-        desc: 'My personal development configuration',
-        path: 'https://github.com/chansee97/dotfiles',
       },
     ],
   },
