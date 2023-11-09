@@ -17,7 +17,6 @@ site style form [antfu.me](https://antfu.me/), But base on [nuxt3](https://nuxt.
 - Article search function
 - Integrate website configuration to reduce the mental burden of modification
 - Comment function based on [Giscus](https://giscus.app/zh-CN)
-- Site browsing statistics based on [51.LA](https://v6.51.la/)
 
 ## 🔎Setup
 Make sure to install the dependencies:
