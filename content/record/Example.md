@@ -9,4 +9,6 @@ title: Example Post
 
 example content
 
-[](https://picsum.photos/200/300)
+### cat
+
+![](http://placekitten.com/g/200/300)

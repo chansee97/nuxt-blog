@@ -37,17 +37,6 @@ You should modify the following files
 - site.config.ts - base site config
 - content - your article folder
 - `pages\p\[...post].vue` - comment config, to [Giscus](https://giscus.app/zh-CN)
-- statistics code - site data statistics code, can be deleted if not needed
-  ``` ts
-  // nuxt.config.ts
-  script: [
-    // ⬇ can be deleted
-    {
-      src: 'https://xxxxx',
-    },
-  
-  ]
-  ```
 
 ## Icon
 - [icon-park-outline](https://icones.js.org/collection/icon-park-outline)
