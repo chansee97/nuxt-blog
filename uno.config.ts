@@ -45,10 +45,6 @@ export default defineConfig({
         'width': '1.2em',
         'height': '1.2em',
       },
-      collections: {
-        'icon-park-outline': () => import('@iconify-json/icon-park-outline/icons.json').then(i => i.default),
-        'simple-icons': () => import('@iconify-json/simple-icons/icons.json').then(i => i.default),
-      },
     }),
   ],
   safelist: [...safeNavIcon],

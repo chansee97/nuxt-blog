@@ -53,7 +53,7 @@ export const socialLinks = [
   {
     title: '掘金',
     path: 'https://juejin.cn/user/3826745248595550',
-    icon: 'i-icon-park-outline-crab',
+    icon: 'i-simple-icons-juejin',
   },
   {
     title: 'Bilibili',
