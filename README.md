@@ -5,7 +5,7 @@
 site style form [antfu.me](https://antfu.me/), But base on [nuxt3](https://nuxt.com/)
 
 > [!IMPORTANT]
-> A new [version](https://github.com/chansee97/nuxt-blog-v2) of article management based on Github issues, simpler and more convenient.
+> A new [version](https://github.com/chansee97/issue-nuxt-blog) of article management based on Github issues, simpler and more convenient.
 
 ## 💡Features
 
